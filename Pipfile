@@ -6,9 +6,9 @@ verify_ssl = true
 
 [packages]
 
-flask_bootstrap = "*"
-flask = "*"
-gunicorn = "*"
+Flask-Bootstrap = "==3.3.7.1"
+Flask = "==0.12.2"
+gunicorn = "==19.9.0"
 flask-heroku = "*"
 
 
