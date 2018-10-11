@@ -1,1 +1,1 @@
-web: gunicorn gettingstarted.wsgi
+web: flask db upgrade; flask translate compile; gunicorn inferno:app
