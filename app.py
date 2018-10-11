@@ -3,12 +3,9 @@ from flask import render_template
 from flask_bootstrap import Bootstrap
 app = Flask(__name__)
 Bootstrap(app)
-
-@app.route('/hello')
-def home():
-    return "Hello World!"
-
 @app.route('/')
+def start():
+    return render_template('index.html')
 @app.route('/index.html')
 def index():
     return render_template('index.html')
