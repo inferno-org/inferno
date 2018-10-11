@@ -1,1 +1,2 @@
-1 web: gunicorn deploy:app
+1 web: gunicorn app:app
+release: python app.py 
