@@ -6,9 +6,9 @@ verify_ssl = true
 
 [packages]
 
-flask = "0.12.2"
+flask = "*"
 gunicorn = "*"
-flask_bootstrap = "*"
+
 
 
 [requires]
