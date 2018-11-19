@@ -14,7 +14,7 @@
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="static/css/round-about.css" rel="stylesheet">
+    <link href="static/css/business-casual.min.css" rel="stylesheet">
 
   </head>
 
@@ -38,7 +38,21 @@
               <a class="nav-link text-uppercase text-expanded" href="mission.html">Mission</a>
             </li>
             <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="teams.html">Teams</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive2" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="nav-link text-uppercase text-expanded">Teams</a>
+              </button>
+
+               <div class="collapse navbar-collapse" id="navbarResponsive2">
+                 <ul class="navbar-nav mx-auto">
+                  <li1 class="nav-item px-lg-4">
+                   <a class="nav-link text-uppercase text-expanded" href="blaze.html">Blaze
+                   <span class="sr-only">(current)</span></a>
+                  </li1>
+                  <li1 class="nav-item px-lg-4">
+                   <a class="nav-link text-uppercase text-expanded" href="ember.html">Ember</a>
+                  </li1>
+                 </ul>
+                </div>
             </li>
             <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="sponsors.html">Sponsors</a>
@@ -48,81 +62,132 @@
       </div>
     </nav>
 
+    <section class="page-section">
+      <div class="container">
+        <div class="product-item">
+          <div class="product-item-title d-flex">
+            <div class="bg-faded p-5 d-flex mr-auto rounded">
+              <h2 class="section-heading mb-0">
+                <span class="section-heading-upper">Remember, remember the 5th of the Ember</span>
+                <span class="section-heading-lower">Ember</span>
+              </h2>
+            </div>
+          </div>
+          <div align="center" class="embed-responsive embed-responsive-16by9">
+              <video autoplay loop class="embed-responsive-item">
+                  <!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
+                  <source type="video/mp4" src="static/video/ember.mp4" />
+                  <!-- WebM/VP8 for Firefox4, Opera, and Chrome -->
+                  <source type="video/webm" src="static/video/ember.webm" />
+                   <!-- M4V for Apple -->
+                  <source type="video/mp4" src="static/video/ember.m4v" />
+                  <!-- Ogg/Vorbis for older Firefox and Opera versions -->
+                  <source type="video/ogg" src="static/video/ember.ogv" />
+                  <!-- Flash fallback for non-HTML5 browsers without JavaScript -->
+                  <object width="100%" height="400" type="application/x-shockwave-flash" data="flashmediaelement.swf">
+                      <param name="movie" value="flashmediaelement.swf" />
+                      <param name="flashvars" value="controls=true&file=assets/video/ember.mp4" />
+                      <!-- Image as a last resort -->
+                      <img src="static/img/Ember.png" width="320" height="240" title="No video playback capabilities" />
+                  </object>
+              </video>
+          </div>
+          <div class="product-item-description d-flex ml-auto">
+            <div class="bg-faded p-5 rounded">
+              <p class="mb-0">In the darkness,    emanating a small glow,   all burning quickly,   with some fiercely,    Becoming an uncontrollable force that leaves the landscape charred and crumbling in its wake.</p>
+              <p class="mb-0">Enemies burning fast and hot, but not for long</p>
+              <p class="mb-0">Flickering away without a final song</p>
+              <p class="mb-0">Burns so so bright, but its gone so fast</p>
+              <p class="mb-0">Disappearing in a second, only embers last!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Page Content -->
     <div class="container">
 
       <!-- Introduction Row -->
-      <h1 class="my-4">Ember Roster:
-        <small>Careful we are hot!</small>
-      </h1>
-      <p>Ember is a very diverse team. Our ages range from 17 to 40. Our members come from the United States and Russia. Some of our members go to local LAN events such as NetWars and UNO ACM LAN.</p>
-
+       <div class="product-item-description d-flex ml-auto">
+            <div class="bg-faded p-5 rounded">
+              <h1 class="my-4">Ember Roster:
+                <small>Careful we are hot!</small>
+              </h1>
+              <p>Ember is a very diverse team. Our ages range from 17 to 40. Our members come from the United States and Russia. Some of our members go to local LAN events such as NetWars and UNO ACM LAN.</p>
+            </div>
+       </div>
       <!-- Team Members Row -->
-      <div class="row">
-        <div class="col-lg-12">
-          <h2 class="my-4">Our team</h2>
-        </div>
-        <div class="col-lg-3 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="https://vrmasterleague.com/images/logos/users/c4db4871-044a-4c71-b553-d2d77ccbe64b.jpg" alt="">
-          <h3>Rob888
-            <small>Sergeant</small>
-          </h3>
-          <p>Age of 23, Computer Science Major, Favorite weapon classes are Rifleman and Automatic</p>
-          <a class="nav-link" href="https://www.twitch.tv/rob888shruber">Twitch</a>
-        </div>
-        <div class="col-lg-3 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="https://vrmasterleague.com/images/logos/users/0e292743-dc7c-42c3-9835-90da769f36d1.jpg" alt="">
-          <h3>Durafen
-            <small>Corporal</small>
-          </h3>
-          <p>TEXT FOR DURAFEN</p>
-           <a class="nav-link" href="https://www.youtube.com/user/duracula">YouTube</a>
-        </div>
-        <div class="col-lg-3 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="https://vrmasterleague.com/images/player_logo_120.png" alt="">
-          <h3>Milkman
-            <small>Corporal</small>
-          </h3>
-          <p>High School Senior from Massachusetts in the U.S. Army's delayed entry program as a Combat Engineer.</p>
-        </div>
-        <div class="col-lg-3 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="https://vrmasterleague.com/images/logos/users/c139ef41-2749-4f54-a5a6-ac2ad746e0ad.jpg" alt="">
-          <h3>powerhose109
-            <small>Private</small>
-          </h3>
-          <p>TEXT FOR POWERHOUSE109</p>
-        </div>
-        <div class="col-lg-3 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="https://vrmasterleague.com/images/logos/users/c2603862-d398-49aa-a401-6db1c70cfb61.png" alt="">
-          <h3>Quokka
-            <small>Private</small>
-          </h3>
-          <p>TEXT FOR QUOKKA</p>
-          <a class="nav-link" href="https://www.twitch.tv/ellochingon1">Twitch</a>
-        </div>
-        <div class="col-lg-3 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="https://vrmasterleague.com/images/player_logo_120.png" alt="">
-          <h3>Riley Duncan
-            <small>Private</small>
-          </h3>
-          <p>TEXT FOR RILEY DUNCAN</p>
-        </div>
-        <div class="col-lg-3 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-          <h3>???
-            <small>???</small>
-          </h3>
-          <p>???</p>
-        </div>
-        <div class="col-lg-3 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-          <h3>???
-            <small>???</small>
-          </h3>
-          <p>???</p>
-        </div>
-      </div>
+      <section class="page-section clearfix">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="my-4">Our players</h2>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center mb-4">
+              <img class="rounded-circle img-fluid d-block mx-auto" src="https://vrmasterleague.com/images/logos/users/c4db4871-044a-4c71-b553-d2d77ccbe64b.jpg" alt="">
+              <h3>Rob888
+                <small>Sergeant</small>
+              </h3>
+              <p>Age of 23, Computer Science Major, Favorite weapon classes are Rifleman and Automatic</p>
+              <a class="nav-link" href="https://www.twitch.tv/rob888shruber">Twitch</a>
+            </div>
 
+
+            <div class="col-lg-3 col-sm-6 text-center mb-4">
+              <img class="rounded-circle img-fluid d-block mx-auto" src="https://vrmasterleague.com/images/logos/users/0e292743-dc7c-42c3-9835-90da769f36d1.jpg" alt="">
+              <h3>Durafen
+                <small>Corporal</small>
+              </h3>
+              <p>TEXT FOR DURAFEN</p>
+               <a class="nav-link" href="https://www.youtube.com/user/duracula">YouTube</a>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 text-center mb-4">
+              <img class="rounded-circle img-fluid d-block mx-auto" src="https://vrmasterleague.com/images/player_logo_120.png" alt="">
+              <h3>Milkman
+                <small>Private</small>
+              </h3>
+              <p>High School Senior from Massachusetts in the U.S. Army's delayed entry program as a Combat Engineer.</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center mb-4">
+              <img class="rounded-circle img-fluid d-block mx-auto" src="https://vrmasterleague.com/images/logos/users/c139ef41-2749-4f54-a5a6-ac2ad746e0ad.jpg" alt="">
+              <h3>powerhose109
+                <small>Private</small>
+              </h3>
+              <p>TEXT FOR POWERHOUSE109</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center mb-4">
+              <img class="rounded-circle img-fluid d-block mx-auto" src="https://vrmasterleague.com/images/logos/users/c2603862-d398-49aa-a401-6db1c70cfb61.png" alt="">
+              <h3>Quokka
+                <small>Private</small>
+              </h3>
+              <p>TEXT FOR QUOKKA</p>
+              <a class="nav-link" href="https://www.twitch.tv/ellochingon1">Twitch</a>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center mb-4">
+              <img class="rounded-circle img-fluid d-block mx-auto" src="https://vrmasterleague.com/images/player_logo_120.png" alt="">
+              <h3>Riley Duncan
+                <small>Private</small>
+              </h3>
+              <p>TEXT FOR RILEY DUNCAN</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center mb-4">
+              <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
+              <h3>???
+                <small>???</small>
+              </h3>
+              <p>???</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center mb-4">
+              <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
+              <h3>???
+                <small>???</small>
+              </h3>
+              <p>???</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <!-- /.container -->
 
