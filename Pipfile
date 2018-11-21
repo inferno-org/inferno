@@ -13,6 +13,8 @@ Flask-Bootstrap = "==3.3.7.1"
 MarkupSafe = "==1.0"
 Werkzeug = "==0.14.1"
 numpy = "*"
+flask-login = "*"
+sqlalchemy = "*"
 
 [dev-packages]
 
