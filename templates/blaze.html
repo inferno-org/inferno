@@ -38,6 +38,7 @@
               <a class="nav-link text-uppercase text-expanded" href="mission.html">Mission</a>
             </li>
             <li class="nav-item active px-lg-4">
+
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive2" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <a class="nav-link text-uppercase text-expanded">Teams</a>
               </button>
@@ -52,6 +53,7 @@
                   </li1>
                  </ul>
                 </div>
+
             </li>
             <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="sponsors.html">Sponsors</a>
@@ -65,20 +67,7 @@
     <section class="page-section">
       <div class="container">
         <div class="product-item">
-          <div class="product-item-title d-flex">
-            <div class="bg-faded p-5 d-flex ml-auto rounded">
-              <h2 class="section-heading mb-0">
-                <span class="section-heading-upper">Forged from the blood of their dead enemy teams.</span>
-                <span class="section-heading-lower">Blaze</span>
-              </h2>
-            </div>
-          </div>
           <img class="product-item-img mx-auto  d-flex rounded img-fluid mb-3 mb-lg-0" src="static/img/Blaze.png" alt="" style="width:80%">
-          <div class="product-item-description d-flex mr-auto">
-            <div class="bg-faded p-5 rounded">
-              <p class="mb-2">Raised in the firey depths of Onward. Trained by the most elite deadly task force ever. BLAZE!!! The myth is true. United is the most talented and skilled players in the league.</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -86,15 +75,6 @@
     <!-- Page Content -->
     <div class="container">
 
-      <!-- Introduction Row -->
-       <div class="product-item-description d-flex ml-auto">
-            <div class="bg-faded p-5 rounded">
-                <h1 class="my-4">Blaze Roster
-                  <small>It's Nice to Meet You!</small>
-                </h1>
-                <p>Text about blaze or what ever goes here</p>
-            </div>
-       </div>
       <!-- Team Members Row -->
       <section class="page-section clearfix">
         <div class="intro-text left-0 text-center bg-faded p-5 rounded">
@@ -107,7 +87,8 @@
               <h3>Not Ready
                 <small>Sergeant</small>
               </h3>
-              <p>TEXT FOR NOT READY HERE</p>
+              <p>I downloaded Onward on one of those promotional weekends last December. I <span id="dots">...</span> <span id="more">immediately became totally immersed and addicted to the game. Many of the other VR games didn't hook me the way Onward did... some made me naucious, some were fun once or twice,others were cool, but not multiplayer. Playing with other people was really important to me and after a few weeks of playing Amiracledev told me about the VRML league. I kind of gave up gaming, because  FPS pancake games usually made me feel more like a sitting technician with all the keyboard commands rather then a soldier. This gave me a rebirth and I immediately wanted to be more involved and looked into joining teams on the league. The first team I joined was the Outlaws, a week after I joined they fell apart and I never got to play a game. Then Yoko Rikai told me he was creating a team. So I brought Rob888 from Outlaws over to join Yoko. However, Yoko never got anything going so I decided after so many failed attempts of playing in the league to start my own team. I recruited Nohm4n on his 3rd day of playing the game and AK on his 2nd week. I was looking for cool people with potential, not established ego heads who don't play nice with others. So Blaze was my actual 1st team and we lost all the lowest seed teams. We had all the newby team problems, like getting 5 to show up and play. We only played 3 games and the season was over. Our first victory was when we actually were able to get a legit team that was committed together for season 5. We kind of consider this our real 1st season. We won our first 4 games in a row of season 5 and we were Blazing. We knew we had something good and we had so much fun.Playing in a league hasn't changed me, more then just released something that was always there. lol.. I think what has impacted me the most is the friendships we've made playing together. We have a blast in our discord and out in the battlefield. OC5 was real cool getting to meet people in real life. All around great experience. 1st do the tutorial, I didn't and man I got shit for it. Now I see other not do the tutorials and I think, "what was I thinking". But for a player looking to join a team? I would find a team that fits your personality and time schedule. If you can't make any of the times your team plays together, it aint going to work. If you want a serious regimented practice routine and overall atmosphere, find a team that runs like that. Our team has to be light hearted, its very democratic, and we try not to bring others down when we other make mistakes. I try not to even tell a team mate they've TK'ed me during a match, as I know it won't make them play better. It's about the team, not you. Have fun!</span></p>
+              <button onclick="readMore()" id="myBtn">Read more</button>
               <a class="nav-link" href="https://www.twitch.tv/notreadyisready" >Twitch</a>
             </div>
             <div class="col-lg-3 col-sm-6 text-center mb-4">
@@ -177,8 +158,26 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
+    <script>
+  function readMore() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
     <script src="static/jquery/jquery.min.js"></script>
     <script src="static/js/bootstrap.bundle.min.js"></script>
+
 
   </body>
 
