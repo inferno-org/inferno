@@ -38,12 +38,12 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
                 <li class="nav-item active px-lg-4">
-                  <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                  <a class="nav-link text-uppercase text-expanded" href="home">Home
                     <span class="sr-only">(current)</span>
                   </a>
                 </li>
                 <li class="nav-item px-lg-4">
-                  <a class="nav-link text-uppercase text-expanded" href="mission.html">Mission</a>
+                  <a class="nav-link text-uppercase text-expanded" href="mission">Mission</a>
                 </li>
                 <li class="nav-item px-lg-4">
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive2" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,27 +53,19 @@
                    <div class="collapse navbar-collapse" id="navbarResponsive2">
                      <ul class="navbar-nav mx-auto">
                       <li1 class="nav-item px-lg-4">
-                       <a class="nav-link text-uppercase text-expanded" href="blaze.html">Blaze</a>
+                       <a class="nav-link text-uppercase text-expanded" href="blaze">Blaze</a>
                       </li1>
                       <li1 class="nav-item px-lg-4">
-                       <a class="nav-link text-uppercase text-expanded" href="ember.html">Ember</a>
+                       <a class="nav-link text-uppercase text-expanded" href="ember">Ember</a>
                       </li1>
                      </ul>
                     </div>
                 </li>
                 <li class="nav-item px-lg-4">
-                  <a class="nav-link text-uppercase text-expanded" href="sponsors.html">Sponsors</a>
+                  <a class="nav-link text-uppercase text-expanded" href="sponsors">Sponsors</a>
                 </li>
               <li class="nav-item px-lg-4">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive3" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <a class="nav-link text-uppercase text-expanded">Login</a>
-                  </button> {{ current_user.username }}
-                  <div class="collapse navbar-collapse" id="navbarResponsive2">
-                     <ul class="navbar-nav mx-auto">
-                      <li1 class="nav-item px-lg-4">
-                       <a class="nav-link text-uppercase text-expanded" href="blaze.html">Log</a>
-                     </ul>
-                    </div>
+                  <a class="nav-link text-uppercase text-expanded" href="login">Log</a>
               </li>
           </ul>
         </div>
@@ -99,77 +91,12 @@
                 <span class="section-heading-upper">Inferno Teams</span>
                 <span class="section-heading-lower">Want to watch?</span>
               </h2>
-              <p class="mb-3">Heres our streamers.</p>
-
-              <!-- Add a placeholder for the Twitch embed -->
-              <div id="twitch-embed"></div>
-
-              <!-- Load the Twitch embed script -->
-              <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-              <!--
-                Create a Twitch.Embed object that will render
-                within the "twitch-embed" root element.
-              -->
-              <script type="text/javascript">
-                var embed = new Twitch.Embed("twitch-embed", {
-                  width: 450,
-                  height: 350,
-                  channel: "virdseyebiew",
-                  layout: "video",
-                  autoplay: false
-                });
-
-                embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-                  var player = embed.getPlayer();
-                  player.play();
-                });
-              </script>
-              <script type="text/javascript">
-                var embed = new Twitch.Embed("twitch-embed", {
-                  width: 450,
-                  height: 350,
-                  channel: "rob888shruber",
-                  layout: "video",
-                  autoplay: false
-                });
-
-                embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-                  var player = embed.getPlayer();
-                  player.play();
-                });
-              </script>
-              <script type="text/javascript">
-                var embed = new Twitch.Embed("twitch-embed", {
-                  width: 450,
-                  height: 350,
-                  channel: "notready",
-                  layout: "video",
-                  autoplay: false
-                });
-
-                embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-                  var player = embed.getPlayer();
-                  player.play();
-                });
-              </script>
-              <script type="text/javascript">
-                var embed = new Twitch.Embed("twitch-embed", {
-                  width: 450,
-                  height: 350,
-                  channel: "Nohm4nVR",
-                  layout: "video",
-                  autoplay: false
-                });
-
-                embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-                  var player = embed.getPlayer();
-                  player.play();
-                });
-              </script>
-        <p class="mb-3">Heres a link to VRML match list.</p>
               <div class="intro-button mx-auto">
-                <a class="btn btn-primary btn-xl" href="https://vrmasterleague.com/Onward/Matches.aspx">Match List</a>
+                <a class="btn btn-primary btn-xl" href="streams">Inferno Streams</a>
+              </div>
+             <br></br>
+              <div class="intro-button mx-auto">
+                <a class="btn btn-primary btn-xl" href="https://vrmasterleague.com/Onward/Matches/">VR Master League Match List</a>
               </div>
 
       </div>

@@ -23,9 +23,6 @@
   </head>
 
   <body>
-    <h>
-       <span class="site-heading-upper text-primary mb-3"> TEST</span>
-    </h>
     <h1 class="site-heading text-center text-white d-none d-lg-block">
       <span class="site-heading-upper text-primary mb-3">Inferno-organization</span>
       <span class="site-heading-lower">Inferno-Streams</span>
@@ -41,21 +38,21 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+              <a class="nav-link text-uppercase text-expanded" href="home">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="mission.html">Mission</a>
+              <a class="nav-link text-uppercase text-expanded" href="mission">Mission</a>
             </li>
             <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="products.html">Teams</a>
+              <a class="nav-link text-uppercase text-expanded" href="teams">Teams</a>
             </li>
             <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="streams.html">Streams</a>
+              <a class="nav-link text-uppercase text-expanded" href="streams">Streams</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="sponsors.html">Sponsors</a>
+              <a class="nav-link text-uppercase text-expanded" href="sponsors">Sponsors</a>
             </li>
           </ul>
         </div>
@@ -68,23 +65,67 @@
           <div class="product-item-title d-flex">
             <div class="bg-faded p-5 d-flex ml-auto rounded">
               <h2 class="section-heading mb-0">
-                <span class="section-heading-upper">Forged from the blood of their dead enemy teams.</span>
-                <span class="section-heading-lower">Blaze</span>
+                <span class="section-heading-lower">Blaze Streams</span>
               </h2>
             </div>
           </div>
-          <img class="product-item-img mx-auto  d-flex rounded img-fluid mb-3 mb-lg-0" src="static/img/Blaze.png" alt="" style="width:80%">
-          <div class="product-item-description d-flex mr-auto">
-            <div class="bg-faded p-5 rounded">
-              <p class="mb-2">Raised in the firey depths of Onward. Trained by the most elite deadly task force ever. BLAZE!!! The myth is true. United is the most talented and skilled players in the league.</p>
-              <p class="mb-2">~Arsenic "I've never been F'ed up by any team like the way Blaze schools my Arse."</p>
-              <p class="mb-2">~Stumpynub "They're so good I wrote a song about them. It goes something like this... Blaze, Blaze they'll never fall. They burned our nuts when we Dangled our balls"</p>
-              <p class="mb-2">~Jizzypants "I tried to join, but didn't make the cut." ~Sri Lankan "Cryos caps have made my d*** move, more than once."</p>
-              <p class="mb-0">Warning: (If any Blaze player is killed in game it is because of a game glitch, lag, or tracking... Virds will testify )</p>
-              <a class="nav-link  text-center text-uppercase text-expanded" href="blaze.html">Player Roster</a>
-            </div>
-          </div>
         </div>
+      </div>
+    </section>
+    <section class="page-section clearfix">
+      <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+        <!-- Add a placeholder for the Twitch embed -->
+              <div id="twitch-embed"></div>
+
+              <!-- Load the Twitch embed script -->
+              <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+              <!--
+                Create a Twitch.Embed object that will render
+                within the "twitch-embed" root element.
+              -->
+              <script type="text/javascript">
+                var embed = new Twitch.Embed("twitch-embed", {
+                  width: 450,
+                  height: 350,
+                  channel: "virdseyebiew",
+                  layout: "video",
+                  autoplay: false
+                });
+
+                embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+                  var player = embed.getPlayer();
+                  player.play();
+                });
+              </script>
+              <script type="text/javascript">
+                var embed = new Twitch.Embed("twitch-embed", {
+                  width: 450,
+                  height: 350,
+                  channel: "notready",
+                  layout: "video",
+                  autoplay: false
+                });
+
+                embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+                  var player = embed.getPlayer();
+                  player.play();
+                });
+              </script>
+              <script type="text/javascript">
+                var embed = new Twitch.Embed("twitch-embed", {
+                  width: 450,
+                  height: 350,
+                  channel: "Nohm4nVR",
+                  layout: "video",
+                  autoplay: false
+                });
+
+                embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+                  var player = embed.getPlayer();
+                  player.play();
+                });
+              </script>
       </div>
     </section>
 
@@ -94,73 +135,41 @@
           <div class="product-item-title d-flex">
             <div class="bg-faded p-5 d-flex mr-auto rounded">
               <h2 class="section-heading mb-0">
-                <span class="section-heading-upper">Remember, remember the 5th of the Ember</span>
-                <span class="section-heading-lower">Ember</span>
+                <span class="section-heading-lower">Ember Streams</span>
               </h2>
-            </div>
-          </div>
-          <div align="center" class="embed-responsive embed-responsive-16by9">
-              <video autoplay loop class="embed-responsive-item">
-                  <!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
-                  <source type="video/mp4" src="static/video/ember.mp4" />
-                  <!-- WebM/VP8 for Firefox4, Opera, and Chrome -->
-                  <source type="video/webm" src="static/video/ember.webm" />
-                   <!-- M4V for Apple -->
-                  <source type="video/mp4" src="static/video/ember.m4v" />
-                  <!-- Ogg/Vorbis for older Firefox and Opera versions -->
-                  <source type="video/ogg" src="static/video/ember.ogv" />
-                  <!-- Flash fallback for non-HTML5 browsers without JavaScript -->
-                  <object width="100%" height="400" type="application/x-shockwave-flash" data="flashmediaelement.swf">
-                      <param name="movie" value="flashmediaelement.swf" />
-                      <param name="flashvars" value="controls=true&file=assets/video/ember.mp4" />
-                      <!-- Image as a last resort -->
-                      <img src="static/img/Ember.png" width="320" height="240" title="No video playback capabilities" />
-                  </object>
-              </video>
-          </div>
-          <div class="product-item-description d-flex ml-auto">
-            <div class="bg-faded p-5 rounded">
-              <p class="mb-0">In the darkness,</p>
-              <p class="mb-0">Emanating a small glow,</p>
-              <p class="mb-0">All burn quickly,</p>
-              <p class="mb-0">And some fiercely,</p>
-              <p class="mb-0">Becoming an uncontrollable</p>
-              <p class="mb-0">Force that leaves</p>
-              <p class="mb-0">The landscape charred</p>
-              <p class="mb-0">And crumbling</p>
-              <p class="mb-0">In its wake.</p>
-              <p class="mb-0">Enemies burning fast and high, but not for long</p>
-              <p class="mb-0">Flickering away without a final song</p>
-              <p class="mb-0">Burns so so bright, but its gone so fast</p>
-              <p class="mb-0">Disappearing in a second, only embers last</p>
-              <a class="nav-link  text-center text-uppercase text-expanded" href="ember.html">Player Roster</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="page-section clearfix">
+      <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+        <!-- Add a placeholder for the Twitch embed -->
+              <div id="twitch-embed2"></div>
 
-    <section class="page-section">
-      <div class="container">
-        <div class="product-item">
-          <div class="product-item-title d-flex">
-            <div class="bg-faded p-5 d-flex ml-auto rounded">
-              <h2 class="section-heading mb-0">
-                <span class="section-heading-upper">Rape, Kill, Pillage and Burn</span>
-                <span class="section-heading-lower">Ragnarok</span>
-              </h2>
-            </div>
-          </div>
-          <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="static/img/Ragnarok.jpg" alt="" style="width:80%">
-          <div class="product-item-description d-flex mr-auto">
-            <div class="bg-faded p-5 rounded">
-              <p class="mb-0">Somthing very VIKINGY!</p>
-            </div>
-          </div>
-        </div>
+              <!-- Load the Twitch embed script -->
+              <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+              <!--
+                Create a Twitch.Embed object that will render
+                within the "twitch-embed" root element.
+              -->
+              <script type="text/javascript">
+                var embed = new Twitch.Embed("twitch-embed2", {
+                  width: 450,
+                  height: 350,
+                  channel: "rob888shruber",
+                  layout: "video",
+                  autoplay: false
+                });
+
+                embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+                  var player = embed.getPlayer();
+                  player.play();
+                });
+              </script>
       </div>
     </section>
-
     <footer class="footer text-faded text-center py-5">
       <div class="container">
         <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="static/img/inferno-logo.png" alt="" style="width:10%">
